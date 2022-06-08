@@ -124,3 +124,7 @@ $ firebase deploy --only hosting
   Project Console: https://console.firebase.google.com/project/alexdarie-2251/overview
   Hosting URL: https://alexdarie-2251.web.app
 ```
+
+Out data is stored on firebase, with a structure as depicted in the following screen capture.
+
+![]()
