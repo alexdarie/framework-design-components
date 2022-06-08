@@ -48,7 +48,7 @@ $ npm run build
   > stencil build --docs
 
   [39:28.9]  @stencil/core
-  [39:29.0]  v2.16.1 ��
+  [39:29.0]  v2.16.1
   [39:29.9]  build, framework-design-components, prod mode, started ...
   [39:30.0]  transpile started ...
   [39:31.3]  transpile finished in 1.27 s
@@ -127,4 +127,8 @@ $ firebase deploy --only hosting
 
 Out data is stored on firebase, with a structure as depicted in the following screen capture.
 
-![]()
+![](https://github.com/alexdarie/framework-design-components/blob/main/readme-files/Screenshot%202022-06-08%20at%2016.50.39.png)
+
+The final result resambles the following depiction.
+
+![](https://github.com/alexdarie/framework-design-components/blob/main/readme-files/Screenshot%202022-06-08%20at%2016.55.01.png)
