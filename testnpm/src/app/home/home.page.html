@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="demo">
+    <ion-row class="demo-row">
+      <ion-col *ngFor="let album of albums">
+        <album-view-component gaveEnergy="{{album.userGaveEnergy}}" idx="{{album.id}}" albumtitle="{{album.title}}" description="{{album.description}}" energy="{{album.energy}}" top="{{album.views}}">
+          <figure slot="images" *ngFor="let image of album.images" hidden>
+            <img src="{{image}}">
+          </figure>
+        </album-view-component>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

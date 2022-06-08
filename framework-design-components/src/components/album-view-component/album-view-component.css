@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:host {
+  display: block;
+  font-family: 'Rubik', sans-serif;
+}
+
+ion-card-title {
+  font-size: 1.2em;
+}
+
+.counter {
+  font-size: 0.9em;
+}
+
+ion-button {
+  --color: gray;
+  --color-hover: black;
+  --background-hover-opacity: 0;
+  margin: 0;
+}
+
+ion-progress-bar {
+    margin-left: 3px;
+    border-radius: 5px;
+    height: 10px;
+    --progress-background: rgb(252, 186, 3);
+    width: 15vw;
+    min-width: 100px;
+}
+
+.card-size {
+  margin: auto;
+  width: 400px;
+}
+
+.stage {
+    margin: auto;
+    background: var(--stage-background, transparent);
+    height: var(--stage-height, 320px);
+    overflow: hidden;
+    width: var(--stage-width, 320px);
+}
+
+.carousel {
+    align-items: center;
+    display: flex;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+::slotted(figure) {
+    height: var(--stage-height, 320px);
+    margin: 0;
+    min-width: var(--stage-width, 320px);
+    overflow: hidden;
+    padding: auto;
+    text-align: center;
+}
+
+.gave-evergy {
+    color: rgb(252, 186, 3);
+}
+
+.did-not-give {
+    color: grey;
+}
+
+.feedback {
+  margin-top: 10px;
+}
+
+.show {
+  display: none;
+}
+
+.hide {
+  display: block;
+}
