@@ -1,5 +1,53 @@
 # One approach on building a standalone Web Component using Stencil
 
+The purpose of this project is to create a web component that displays the contents of a photography album. It provides basic controls for navigating these images, a reaction bar where one can leave a positive feedback, and a toggle button that switches to a short description of the album.
+
+## Technologies used
+
+ - **Stencil** for building the web component
+ - **Ionic** and **Angular** for demonstrating the usecase
+ - **Firebase** for storage and hosting support
+ - Ionicons for icons
+
+## Web Component usage
+
+In the `main.ts` file add the following lines of code.
+
+```
+import { defineCustomElements} from 'framework-design-components/loader';
+
+/** At the bottom of the file. */
+defineCustomElements(window);
+```
+
+Then, in the `home.module.ts` add the following.
+
+```
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+@NgModule({
+  ...
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+```
+
+Finally, in the `home.page.ts` use the following example.
+
+```
+<div class="demo">
+    <ion-row class="demo-row">
+      <ion-col *ngFor="let album of albums">
+        <album-view-component gaveEnergy="{{album.userGaveEnergy}}" idx="{{album.id}}" albumtitle="{{album.title}}" description="{{album.description}}" energy="{{album.energy}}" top="{{album.views}}">
+          <figure slot="images" *ngFor="let image of album.images" hidden>
+            <img src="{{image}}">
+          </figure>
+        </album-view-component>
+      </ion-col>
+    </ion-row>
+  </div>
+```
+
+## Project setup
+
 The following commands describe our setup for the StencilJS component.
 
 ``` zsh
@@ -125,10 +173,20 @@ $ firebase deploy --only hosting
   Hosting URL: https://alexdarie-2251.web.app
 ```
 
+## Firebase storage and hosting
+
 Out data is stored on firebase, with a structure as depicted in the following screen capture.
 
 ![](https://github.com/alexdarie/framework-design-components/blob/main/readme-files/Screenshot%202022-06-08%20at%2016.50.39.png)
 
+The app is available at: https://alexdarie-2251.web.app/home
+
+## Results
+
 The final result resambles the following depiction.
 
 ![](https://github.com/alexdarie/framework-design-components/blob/main/readme-files/Screenshot%202022-06-08%20at%2016.55.01.png)
+
+## Support
+
+The album-view component works in all browsers (Chrome, Opera, Firefox, Safari etc.).
