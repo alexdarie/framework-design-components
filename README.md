@@ -13,7 +13,7 @@ The purpose of this project is to create a web component that displays the conte
 
 In the `main.ts` file add the following lines of code.
 
-```
+```ts
 import { defineCustomElements} from 'framework-design-components/loader';
 
 /** At the bottom of the file. */
@@ -22,7 +22,7 @@ defineCustomElements(window);
 
 Then, in the `home.module.ts` add the following.
 
-```
+```ts
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -32,7 +32,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 Finally, in the `home.page.ts` use the following example.
 
-```
+```html
 <div class="demo">
     <ion-row class="demo-row">
       <ion-col *ngFor="let album of albums">
@@ -45,6 +45,19 @@ Finally, in the `home.page.ts` use the following example.
     </ion-row>
   </div>
 ```
+
+### Properties
+
+| Name | Type | Default value | Description |
+| -- | -- | -- | -- |
+| albumtitle | string | None | The title of the album. |
+| idx | string | None | The Firebase id of the album record. | 
+| gaveEnergy | boolean | false | The state representing the action taken by the current user. | 
+| num | number | 0 | The number of images the album contains. |
+| position | number | 0 | The position of the currently displayed image. |
+| energy | number | 0 | The total number of reactions given. |
+| description | string | None | The album description. | 
+| top | number | 10 | The denominator used in the feedback bar for showing how many reactions the album has. | 
 
 ## Project setup
 
@@ -190,3 +203,7 @@ The final result resambles the following depiction.
 ## Support
 
 The album-view component works in all browsers (Chrome, Opera, Firefox, Safari etc.).
+
+## License
+
+MIT
