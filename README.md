@@ -48,7 +48,7 @@ Finally, in the `home.page.ts` use the following example.
 
 Alternatively, the component may be used in a simple html file.
 
-```
+```html
  <album-view-component albumtitle="Electric Castle 2019" energy="3" top="12">
    <figure slot="images" hidden>
      <img src="https://firebasestorage.googleapis.com/v0/b/alexdarie-2251.appspot.com/o/festivals-timeline%2Felectric%20castle%2Fec7_2.jpg?alt=media" alt="Caption 1">
