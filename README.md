@@ -1,6 +1,6 @@
 # One approach on building a standalone Web Component using Stencil
 
-The purpose of this project is to create a web component that displays the contents of a photography album. It provides basic controls for navigating these images, a reaction bar where one can leave a positive feedback, and a toggle button that switches to a short description of the album.
+The purpose of this project is to create a [web component](https://www.npmjs.com/package/framework-design-components) (available on npm) that displays the contents of a photography album. It provides basic controls for navigating these images, a reaction bar where one can leave a positive feedback, and a toggle button that switches to a short description of the album.
 
 ## Technologies used
 
