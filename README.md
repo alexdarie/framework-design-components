@@ -46,6 +46,22 @@ Finally, in the `home.page.ts` use the following example.
   </div>
 ```
 
+Alternatively, the component may be used in a simple html file.
+
+```
+    <album-view-component albumtitle="Electric Castle 2019" energy="3" top="12">
+      <figure slot="images" hidden>
+        <img src="https://firebasestorage.googleapis.com/v0/b/alexdarie-2251.appspot.com/o/festivals-timeline%2Felectric%20castle%2Fec7_2.jpg?alt=media&token=fb9e8443-d1ea-4925-96a8-dd1eab6642bc" alt="Caption 1">
+      </figure>
+      <figure slot="images" hidden>
+        <img src="https://firebasestorage.googleapis.com/v0/b/alexdarie-2251.appspot.com/o/festivals-timeline%2Felectric%20castle%2Fec7_7.jpg?alt=media&token=74f6ece4-0473-4a54-b895-97594f05d9a5" alt="Caption 2">
+      </figure>
+      <figure slot="images" hidden>
+        <img src="https://firebasestorage.googleapis.com/v0/b/alexdarie-2251.appspot.com/o/festivals-timeline%2Felectric%20castle%2Fec7_3.jpg?alt=media&token=7465197b-80c3-4a4c-ae6e-d7171655a88d" alt="Caption 3">
+      </figure>
+    </album-view-component>
+```
+
 ### Properties
 
 | Name | Type | Default value | Description |
